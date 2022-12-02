@@ -73,6 +73,9 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       Siema - <Link to="/about">about me</Link>
+      <Link to="/blog">
+        Blog
+      </Link>
       <StaticImage
         src="../images/example.png"
         loading="eager"

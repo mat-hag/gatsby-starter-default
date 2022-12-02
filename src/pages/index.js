@@ -72,7 +72,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
-      Siema
+      Siema - <Link to="/about">about me</Link>
       <StaticImage
         src="../images/example.png"
         loading="eager"

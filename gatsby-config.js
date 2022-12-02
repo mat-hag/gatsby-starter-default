@@ -7,6 +7,10 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+ require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -53,7 +57,7 @@ module.exports = {
         options: {
           // You can find your read-only API token under the Settings > API tokens
           // section of your administrative area. Make sure to grant both CDA and CMA permissions.
-          apiToken: `9b537cb6951f08447c573bdf86c6d6`,
+          apiToken: process.env.DATO_API_TOKEN,
     
           // The project environment to read from. Defaults to the primary environment:
           // environment: `main`,
